@@ -1,0 +1,5 @@
+<!--pages/pick/pick.wxml-->
+<view class="pick">
+  <view class="pick-content"></view>
+  <view class="pick-operation"></view>
+</view>

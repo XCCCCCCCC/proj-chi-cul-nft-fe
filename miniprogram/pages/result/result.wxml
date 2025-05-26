@@ -1,0 +1,5 @@
+<!--pages/result/result.wxml-->
+<view class="result">
+  <view class="result-content"> </view>
+  <view class="result-footer"></view>
+</view>
