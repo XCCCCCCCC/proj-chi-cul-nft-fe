@@ -2,7 +2,7 @@
   "libVersion": "2.32.3",
   "projectname": "porj-chi-chul-nft-fe",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "coverView": false,
     "lazyloadPlaceholderEnable": false,
     "skylineRenderEnable": true,
@@ -19,5 +19,24 @@
     "checkInvalidKey": true,
     "ignoreDevUnusedFiles": true
   },
-  "condition": {}
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/share/share",
+          "pathName": "pages/share/share",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        },
+        {
+          "name": "pages/pick/pick",
+          "pathName": "pages/pick/pick",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

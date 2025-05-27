@@ -1,5 +1,22 @@
 <!--pages/pick/pick.wxml-->
 <view class="pick">
-  <view class="pick-content"></view>
+  <view class="pick-content">
+    <view class="template-item">
+      <image class="template-item__img" src="../../assets/images/pick_mode_2.png" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+      <van-button type="primary" size="small" round custom-class="template-item__btn">使用模版</van-button>
+    </view>
+    <view class="template-item">
+      <image class="template-item__img" src="../../assets/images/pick_mode_1.png" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+      <van-button type="primary" size="small" round custom-class="template-item__btn">使用模版</van-button>
+    </view>
+    <view class="template-item">
+      <image class="template-item__img" src="../../assets/images/pick_mode_2.png" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+      <van-button type="primary" size="small" round custom-class="template-item__btn">使用模版</van-button>
+    </view>
+    <view class="template-item">
+      <image class="template-item__img" src="../../assets/images/pick_mode_2.png" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+      <van-button type="primary" size="small" round custom-class="template-item__btn">使用模版</van-button>
+    </view>
+  </view>
   <view class="pick-operation"></view>
 </view>

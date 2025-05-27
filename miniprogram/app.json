@@ -4,13 +4,13 @@
     "pages/logs/logs",
     "pages/result/result",
     "pages/scan/scan",
-    "pages/pick/pick"
+    "pages/pick/pick",
+    "pages/share/share"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationStyle": "default"
   },
-  "style": "v2",
   "rendererOptions": {
     "skyline": {
       "defaultDisplayBlock": true,
