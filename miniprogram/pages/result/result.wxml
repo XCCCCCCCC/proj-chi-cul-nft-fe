@@ -1,5 +1,33 @@
 <!--pages/result/result.wxml-->
 <view class="result">
-  <view class="result-content"> </view>
-  <view class="result-footer"></view>
+  <view class="result-content">
+    <view class="title">大唐簪花侍女</view>
+    <image class="nft" src="../../assets/images/result_nft.png" mode="widthFix"></image>
+  </view>
+  <view class="result-footer">
+    <view class="module" bindtap="handleShareClick">
+      <view class="module-icon">
+        <image class="module-icon__img" src="../../assets/images/icon_result_1.png" mode="heightFix"></image>
+      </view>
+      <view class="module-label">分享炫耀</view>
+    </view>
+    <view class="module">
+      <view class="module-icon">
+        <image class="module-icon__img" src="../../assets/images/icon_result_2.png" mode="heightFix"></image>
+      </view>
+      <view class="module-label">邀约体验</view>
+    </view>
+    <view class="module">
+      <view class="module-icon">
+        <image class="module-icon__img" src="../../assets/images/icon_result_3.png" mode="heightFix"></image>
+      </view>
+      <view class="module-label">生成视频</view>
+    </view>
+    <view class="module">
+      <view class="module-icon">
+        <image class="module-icon__img" src="../../assets/images/icon_result_4.png" mode="heightFix"></image>
+      </view>
+      <view class="module-label">AR合影</view>
+    </view>
+  </view>
 </view>

@@ -2,8 +2,8 @@
 <view class="share">
   <view class="share-content">
     <view class="template-item">
-      <image class="template-item__img" src="../../assets/images/pick_mode_1.png" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
-      <van-button type="primary" size="large" round custom-class="template-item__btn">
+      <image class="template-item__img" src="../../assets/images/share.png" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+      <van-button type="primary" size="large" round custom-class="template-item__btn" bindtap="handleShareClick">
         <div class="btn-container">
           <image class="icon__share" src="../../assets/images/icon_share_wechat.png" mode="heightFix" lazy-load="false" binderror="" bindload=""> </image>
           <span>发布到微信朋友圈</span>
@@ -14,7 +14,35 @@
   <view class="share-operation"></view>
   <van-overlay show="{{ showOverlay }}" bind:click="onClickHide">
     <view class="overlay-wrapper">
-      <view class="card" catch:tap="noop" />
+      <view class="card" catch:tap="noop">
+        <view class="card-title">发布到微信朋友圈</view>
+        <view class="card-step">
+          <view class="card-step-item">
+            <view class="step-side">
+              <view class="step-side__circle">1</view>
+              <view class="step-side__line"></view>
+            </view>
+            <view class="step-main">
+              <view class="step-main__name">保存朋友圈9图到本地</view>
+            </view>
+          </view>
+          <view class="card-step-item">
+            <view class="step-side">
+              <view class="step-side__circle">2</view>
+            </view>
+            <view class="step-main">
+              <view class="step-main__name">打开微信朋友圈，点击发布按钮，按顺序选择本地已存储的9图进行发布</view>
+            </view>
+          </view>
+        </view>
+        <view class="card-preview">
+          <image class="card-preview__img" src="../../assets/images/share.png" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+        </view>
+        <view class="card-operation">
+          <view class="operation__btn cancel" bindtap="handleCancelClick">取消</view>
+          <view class="operation__btn save" bindtap="handleSaveClick">保存到本地</view>
+        </view>
+      </view>
     </view>
   </van-overlay>
 </view>

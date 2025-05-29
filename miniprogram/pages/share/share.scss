@@ -45,11 +45,87 @@ page {
   justify-content: center;
   height: 100%;
   .card {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    border-radius: 20px;
-    padding: 64rpx 60rpx 32rpx;
+    border-radius: 40rpx;
+    padding: 64rpx 60rpx 0;
     background: linear-gradient(180deg, #fff6df -5%, #ffffff 100%);
     width: 580rpx;
     height: 1000rpx;
+    &-title {
+      margin-bottom: 64rpx;
+      text-align: center;
+      font-size: 30rpx;
+      color: #000;
+    }
+    &-step {
+      // flex: 1;
+      // min-height: 0;
+      &-item {
+        display: flex;
+        .step-side {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20rpx;
+          &__circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 44rpx;
+            height: 44rpx;
+            background-color: #ffecbd;
+            font-size: 28rpx;
+            line-height: 1;
+            color: #c9961a;
+          }
+          &__line {
+            height: 50rpx;
+            // border-right: 2px dashed #c9961a;
+            width: 4rpx;
+            background-image: linear-gradient(to bottom, #c9961a 50%, transparent 50%);
+            background-size: 1rpx 10rpx;
+            background-repeat: repeat-y;
+          }
+        }
+        .step-main {
+          flex: 1;
+          min-width: 0;
+          font-size: 26rpx;
+          line-height: 1.5;
+          color: #6e6e6e;
+        }
+      }
+    }
+    &-preview {
+      flex: 1;
+      min-height: 0;
+      padding: 50rpx 16rpx 0;
+      &__img {
+        width: 100%;
+      }
+    }
+    &-operation {
+      justify-self: flex-end;
+      display: flex;
+      align-items: center;
+      margin: 0 -60rpx;
+      height: 100rpx;
+      .operation__btn {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        justify-content: center;
+        font-size: 32rpx;
+        &.save {
+          color: #c9961a;
+        }
+        &.cancel {
+          color: #6e6e6e;
+        }
+      }
+    }
   }
 }

@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    showOverlay: true,
+    showOverlay: false,
   },
 
   /**
@@ -46,4 +46,30 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {},
+  handleShareClick() {
+    this.setData({
+      showOverlay: true,
+    })
+  },
+  handleCancelClick() {
+    this.setData({
+      showOverlay: false,
+    })
+  },
+  handleSaveClick() {
+    wx.getImageInfo({
+      src: '../../assets/images/share.png',
+      success(res) {
+        wx.saveImageToPhotosAlbum({
+          filePath: res.path,
+          success: () => {
+            wx.showToast({
+              title: '保存成功',
+            })
+          },
+        })
+      },
+      fail: (err) => console.log('获取图片失败', err),
+    })
+  },
 })
