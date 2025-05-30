@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/scan/scan",
     "pages/index/index",
     "pages/logs/logs",
     "pages/result/result",
-    "pages/scan/scan",
+    "pages/camera/camera",
     "pages/pick/pick",
     "pages/share/share"
   ],

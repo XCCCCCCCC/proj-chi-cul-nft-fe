@@ -1,0 +1,20 @@
+<view class="camera">
+  <camera mode="scanCode" flash="off" bindscancode="scanCode" binderror="error">
+    <view class="qr-scanner">
+      <view class="box">
+        <view class="line"></view>
+        <view class="angle"></view>
+      </view>
+    </view>
+  </camera>
+  <view class="toggle">
+    <view class="toggle-item">
+      <view class="toggle-item__label">扫码</view>
+      <view class="toggle-item__dot"></view>
+    </view>
+    <view class="toggle-item active">
+      <view class="toggle-item__label">扫文创</view>
+      <view class="toggle-item__dot"></view>
+    </view>
+  </view>
+</view>

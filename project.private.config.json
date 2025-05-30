@@ -23,11 +23,18 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/scan/scan",
-          "pathName": "pages/scan/scan",
+          "name": "pages/camera/camera",
+          "pathName": "pages/camera/camera",
           "query": "",
           "scene": null,
           "launchMode": "default"
+        },
+        {
+          "name": "pages/scan/scan",
+          "pathName": "pages/scan/scan",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "pages/result/result",

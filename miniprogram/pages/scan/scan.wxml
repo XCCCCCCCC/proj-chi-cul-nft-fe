@@ -1,2 +1,8 @@
-<!--pages/scan/scan.wxml-->
-<text>pages/scan/scan.wxml</text>
+<view class="scan">
+  <view class="scan-bd">
+    <button type="default" bindtap="handleScanClick" hover-class="basic-btn__hover">
+      <image src="../../assets/images/scan.png"></image>
+    </button>
+    <text>扫一扫实物文创，体验数字文创</text>
+  </view>
+</view>
