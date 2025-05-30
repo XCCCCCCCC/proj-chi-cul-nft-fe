@@ -2,6 +2,7 @@
 <view class="result">
   <view class="result-content">
     <view class="title">大唐簪花侍女</view>
+    <view class="tip">IP故事<van-icon name="arrow" />文创理念<van-icon name="arrow" />主题集<van-icon name="arrow" />附加权益<van-icon name="arrow" /></view>
     <image class="nft" src="../../assets/images/result_nft.png" mode="widthFix"></image>
   </view>
   <view class="result-footer">

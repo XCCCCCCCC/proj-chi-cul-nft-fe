@@ -24,19 +24,31 @@ page {
       background-position: center;
       .title {
         position: absolute;
-        top: 40rpx;
+        top: 48rpx;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 25px;
+        font-size: 50rpx;
         font-weight: bold;
-        line-height: normal;
+        line-height: 1;
         text-align: center;
-        letter-spacing: -0.3px;
+        letter-spacing: -0.6rpx;
+        color: #155457;
+      }
+      .tip {
+        position: absolute;
+        width: 500rpx;
+        bottom: 180rpx;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 28rpx;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
         color: #155457;
       }
       .nft {
         margin: 180rpx auto 0;
-        width: 500rpx;
+        width: 420rpx;
       }
     }
     &-footer {
@@ -44,6 +56,9 @@ page {
       justify-content: space-between;
       padding: 0 40rpx 56rpx;
       .module {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &-icon {
           display: flex;
           justify-content: center;
